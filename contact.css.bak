@@ -1,0 +1,308 @@
+body{
+	background-image:url('img/bg4.jpg');
+	color: #000305;
+	font-size: 87.5%;
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+
+}
+.clockStyle {
+							
+							
+								padding:10px;
+								border:#999 5px inset;
+									border-radius: 5px;
+  -moz-border-radius: 5px;    
+   -webkit-border-radius: 5px;
+								color:#666;
+								font-family:'Lucida Sans Unicode', Gadget, sans-serif;
+								font-size: 16px;
+								font-weight:bold;
+								letter-spacing: 1px;
+								display:inline;
+								float:right;
+								
+							}
+a {
+	text-decoration : none;
+
+}
+a:link, a:visited {
+color: DodgerBlue;
+}
+a:hover, a:active {
+	background-color : DodgerBlue;
+	color:white;
+}
+.body{
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+}
+.mainHeader img {
+	width: 30%;
+	height: auto;
+	margin: 2% 0;
+}
+.mainHeader nav li:hover ul{
+	display:block;
+}
+
+
+.mainHeader nav {
+	background-color: #666;
+	height: 40px;
+	border-radius: 5px;
+  -moz-border-radius: 5px;    
+   -webkit-border-radius: 5px;
+   display:block;
+   position:relative;
+   
+}
+.mainHeader nav ul { 
+		list-style: none;
+	margin: 0 auto;
+}
+.mainHeader nav ul li {
+	position:relative;
+	float: left;
+	display: inline;
+}
+.mainHeader nav ul ul{
+	float:left;
+	position:absolute;
+display:none;
+left:0px;
+ border-radius: 5px ;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+	background-color:#666;
+}
+
+.mainHeader nav ul ul li a{
+		display:inline-block;
+	
+	position:left;
+}
+
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color:#FFF;
+	display:inline-block;
+	padding: 10px 25px;
+	height: 20px;
+
+}
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+	background-color: DodgerBlue;
+	text-shadow: none;
+	
+}
+.mainHeader nav ul li a { 
+ border-radius: 5px ;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ }
+ .mainContent {
+ 	line-height: 25px;
+ 	 border-radius: 5px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+}
+.content {
+	width: 70%;
+	float: left;
+}
+.topcontent{
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 2%;
+}
+                   
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+
+  /* To see the limits of the form */
+  padding: 16px;
+  border: 3px solid #CCC;
+  border-radius: 16px;
+}
+
+div + div {
+  margin-top: 20px;
+}
+
+label {
+  /* To make sure that all label have the same size and are properly align */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /* To make sure that all text field have the same font settings
+     By default, textarea are set with a monospace font */
+  font: 20px sans-serif;
+
+  /* To give the same size to all text field */
+  width: 300px;
+
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 3px solid #999;
+     border-radius: 5px ;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+
+}
+
+input:focus, textarea:focus {
+  /* To give a little highligh on active elements */
+  border-color: DodgerBlue;
+}
+
+textarea {
+  /* To properly align multiline text field with their label */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 190px;
+
+  /* To allow users to resize any textarea vertically
+     It works only on Chrome, Firefox and Safari */
+  resize: vertical;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra magin represent the same space as the space between
+     the labels and their text fields */
+  margin-left: .90px;
+}
+                   
+                   
+                   
+                   
+
+.top-sidebar{
+	width:21%;
+	float:left;
+background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	margin-top:2%;
+	padding: 2% 3%;
+}
+.middle-sidebar{     	
+	width: 21%;
+  float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+		padding: 2% 3%;
+}
+.bottom-sidebar{
+	width: 21%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+		padding: 2% 3%;
+}
+.mainFooter{
+	width: 100%;
+	height: 40px;
+	float:left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #666;
+	margin:2% 0;
+}
+.mainFooter p {
+	width: 92%;
+	margin: 10px auto;
+	color: #FFF;
+}
+
+
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+		.body {
+		width: 90%;
+		font-size:95%
+		}
+			.clockStyle {
+							color:white;
+								font-size: 11px;
+							
+						}
+		.mainHeader img {
+			width: 100%;
+	}
+	.mainHeader nav{
+		height: 200px;
+	}
+	.mainHeader nav ul {                                 
+  padding-left:0                                   
+  }                                                    
+  .mainHeader nav ul li {                              
+   width:100%;                                 
+   text-align: center;                                                                                                   
+  }                                                    
+  .mainHeader nav a:link, .mainHeader nav a:visited {                                                  
+  	padding: 1Opx 25px;                                
+  	height: 20px;  
+  	display:block;                                    
+  }                                                                                                 
+.content {                               
+	width: 100%;                            
+	float: left; 
+	margin-top: 2%;                          
+}                 
+                  
+.topcontent{                             
+	background-color:#FFF;                
+	border-radius: 5px;                    
+	-moz-border-radius: 5px                
+	-webkit-border-radius: 5px;            
+	padding: 3% 5%;                        
+	margin-top: 2%; 
+	margin-bottom: 4%;                       
+} 
+form{
+	width:350px;
+	}           
+input, textarea {
+	width:200px;
+}                            
+  
+.top-sidebar, .middle-sidebar, .bottom-sidebar {                                                          
+	width:94%;                      
+	margin:2% 0 2% 0;                  
+	padding: 2% 3%;                 
+}                                 
+}                                 
+

@@ -1,0 +1,18 @@
+<?php
+if(isset($_POST) && isset($_POST['nom']) isset($_POST['email']) &&!empty($_POST['message']))
+{
+	extract($_POST);
+	if(!empty($nom) && !empty($email) && !empty($message)) {
+	$destinataire ="mbarki_lobna@yahoo.fr";
+	$sujet="Formulaire de contact";
+	$msg="Une nouvelle question est arrivée \n
+	Nom : $nom \n
+	Email : $email \n
+	Message : $message " ;
+	$expediteur =$nom.' <'.$courriel.'>';
+		$mail =mail($destinataire,$message,$expediteur .' : CPG_Centre de recherche : Mail de test');
+if($mail)echo'Email envoyé avec succés! '; 
+else echo'Echec envoi d email!';
+}
+else echo 'Formulaires non soumis ou des champs sont vodes';
+?>

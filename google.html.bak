@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">	
+	<head>
+		<title>  Centre de recherche | CPG </title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		</head>
+		<body class="body">
+			<header class="mainHeader">
+				<img src="img/cpg.jpg">
+		
+			<div id="clockDisplay" class="clockStyle"  > </div>
+<script type="text/javascript" language="javascript" >
+		function renderTime()
+		{
+			var currentTime = new Date();
+			var diem = "AM";
+			var h = currentTime.getHours();
+			var m = currentTime.getMinutes();
+			var s = currentTime.getSeconds();
+			if(h == 0){
+			h=12;}
+			else if(h > 12){
+				h=h-12;
+				diem= "PM";
+			}
+		if(h < 10){
+		h= "0" + h ; 
+		}
+			if(m < 10){
+		m= "0" + m ;
+		 }
+			if(s < 10){
+		s= "0" + s ;
+		 }
+		var myClock = document.getElementById('clockDisplay');
+		myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+			myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+			setTimeout('renderTime()', 1000);
+		}
+		renderTime();
+		
+	
+		</script>
+	
+		
+		
+	
+	
+	
+				<nav><ul>
+						<li><a href="test1.html">Acceuil</a></li>
+						<li><a href="#">Raports d'analyses</a>
+							<ul>
+								<li><a href="#">Publique</a></li>
+								<li><a href="#">Prive</a></li>
+								</ul>
+							
+							</li>
+						<li class="active"><a href="google.html">Google Map</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						</ul></nav>
+
+				</header>
+
+	
+				<div class="mainContent">
+					<div class="content">
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d822.8759236364168!2d8.7930482!3d34.4139587!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2stn!4v1427652735344" width="600" height="450" frameborder="0" style="border:0"></iframe>
+					</div>
+				</div>
+			<aside class="top-sidebar">
+				<article>
+					<h2>Top sidebar</h2>
+						<p>centre de recherche</p>
+					</article>
+			</aside>
+			<aside class="middle-sidebar">
+				<article>
+					<h2>Middle sidebar</h2>
+						<p>centre de recherche</p>
+					</article>
+			</aside>
+			<aside class="bottom-sidebar">
+				<article>
+					<h2>Bottom sidebar</h2>
+						<p>centre de recherche</p>
+					</article>
+			</aside>
+	<footer class="mainFooter">
+		<p>Copyright &copy 2015 <a href="#" title="Centre de recherche">cpg.com.tn</a></p>
+		</footer>
+
+
+		</body>
+	</html>
