@@ -71,15 +71,17 @@
 					<div class="content">
 						
 						<article class="topcontent">
-							<header>
-								<h2><a href="#" title="First post"></a></h2>
-									</header>
-									<footer>
-										<p class="post-info"></p>
-										</footer>
-										<content>
-											<p></p>
-											</content>
+							<ul>
+								<?php 
+									$dir =  __DIR__.'/upload';
+									$phpfiles = scandir($dir);
+									foreach($phpfiles as $phpfile)
+									{
+										if(basename($phpfile != '.' && basename($phpfile!='..')))
+											echo " <li> <a target='_blank' href='upload/" .basename($phpfile)."'>".basename($phpfile)."</a></li>";
+									}
+								?>
+							</ul>
 						</article>
 						
 						
